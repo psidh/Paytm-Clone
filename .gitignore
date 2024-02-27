@@ -1,0 +1,46 @@
+# Ignore node_modules directory globally
+node_modules/
+
+# Ignore environment files
+.env
+.env.local
+
+# Backend exclusions
+backend/logs
+backend/*.log
+backend/npm-debug.log*
+backend/yarn-debug.log*
+backend/yarn-error.log*
+backend/pnpm-debug.log*
+backend/lerna-debug.log*
+backend/node_modules
+backend/dist
+backend/dist-ssr
+backend/*.local
+backend/.vscode/*
+backend/.idea
+backend/.DS_Store
+backend/*.suo
+backend/*.ntvs*
+backend/*.njsproj
+backend/*.sln
+backend/*.sw?
+
+# Frontend exclusions
+frontend/logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+frontend/node_modules
+frontend/dist
+frontend/.vscode/*
+frontend/.idea
+frontend/.DS_Store
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
