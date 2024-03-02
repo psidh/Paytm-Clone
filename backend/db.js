@@ -1,7 +1,5 @@
-const mongoose = require('mongoose');
-mongoose.connect(
-  'mongodb+srv://philkhanasidharth14:1xd1BDZPkXSPBMGh@cluster0.gzhndhk.mongodb.net/paytm'
-);
+const mongoose = require("mongoose");
+mongoose.connect('mongodb+srv://philkhanasidharth14:1xd1BDZPkXSPBMGh@cluster0.gzhndhk.mongodb.net/paytm');
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -16,9 +14,9 @@ const userSchema = new mongoose.Schema({
     type: String,
   },
   password: {
+    required: true,
     type: String,
-    required: true, // Specify that password is required
-    minlength: 6, // Specify the minimum length of the password
+    minLength: 6,
   },
 });
 
